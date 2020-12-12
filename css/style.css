@@ -1,0 +1,91 @@
+/*General Style from other Website tutorial*/
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* General Style */
+body {
+  background:#00A0B0;
+  font-family: 'Andika New Basic', sans-serif;
+}
+
+p{
+  line-height:1.75;
+}
+
+h1{
+  font-size: 3rem;
+  padding:10px;
+}
+
+h2{
+  font-size: 2rem;
+  padding:10px;
+}
+
+input{
+  margin:10px;
+  back
+}
+
+
+
+/* ID's Styles */
+
+#container {
+  background:#EB6841;
+  width:600px;
+  border-radius:20px; 
+  margin:auto;
+  padding-top:200px;
+
+}
+
+#initial-box{
+  visibility:visible;
+  float:center;
+  width:350px;
+  height:350px;
+  margin:auto;
+  border: solid #CC333F 10px;
+  background-color:rgb(117, 204, 200);
+  text-align:center;
+  padding:80px 0; /*tentativa de centralizar texto verticalmente*/
+  
+}
+
+#quiz1, #quiz2, #quiz3, #quiz4, #quiz5  {
+  visibility: hidden;
+  width:350px;
+  height:350px;
+ 
+  margin: auto;
+  border:solid #CC333F 10px;
+  background-color:rgb(117, 204, 200);
+  text-align:left;
+}
+
+
+#feedback{
+  visibility: hidden;
+  width:350px;
+  height:350px;
+  margin:auto;
+  border:solid #CC333F 10px;
+  background-color:rgb(117, 204, 200);
+  text-align:center;
+}
+
+img{
+  margin:auto;
+  width:300px; 
+}
