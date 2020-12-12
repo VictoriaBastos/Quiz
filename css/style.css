@@ -59,7 +59,7 @@ input{
   border: solid #CC333F 10px;
   background-color:rgb(117, 204, 200);
   text-align:center;
-  padding:80px 0; /*tentativa de centralizar texto verticalmente*/
+  padding:50px 0; /*tentativa de centralizar texto verticalmente*/
   
 }
 
@@ -86,6 +86,44 @@ input{
 }
 
 img{
-  margin:auto;
+  /*margin:auto;*/
+  margin:20px auto;
   width:300px; 
+}
+
+/* Classes' Styles */
+
+
+.start-button{
+  width: 90px;
+  height: 50px;
+  background:#CC333F;
+  border: solid #EB6841 5px;
+  border-radius:20px;
+  padding:20px;
+  font-family: 'Andika New Basic', sans-serif;
+  font-size: 1em;
+  line-height: 0;
+  margin:15px;
+}
+
+.next-button{
+  width: 90px;
+  height: 50px;
+  background: #EB6841;
+  border: solid #CC333F 5px;
+  border-radius:20px;
+  margin:7px 85px;
+
+  font-family: 'Andika New Basic', sans-serif;
+  color:black;
+  font-weight: ;
+  font-size: 1.2em;
+  font-stretch: ultra-expanded;
+  line-height: 0;
+}
+
+.quiz-window{
+  color: black;
+  padding: 40px 30px 40px 30px;
 }
