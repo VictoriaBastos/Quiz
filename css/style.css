@@ -15,7 +15,7 @@
 /* General Style */
 body {
   background:#00A0B0;
-  font-family: 'Andika New Basic', sans-serif;
+  font-family:'Montserrat', sans-serif;
 }
 
 p{
@@ -57,6 +57,7 @@ input{
   height:350px;
   margin:auto;
   border: solid #CC333F 10px;
+  border-radius:10px;
   background-color:rgb(117, 204, 200);
   text-align:center;
   padding:50px 0; /*tentativa de centralizar texto verticalmente*/
@@ -65,34 +66,50 @@ input{
 
 #quiz1, #quiz2, #quiz3, #quiz4, #quiz5  {
   visibility: hidden;
-  width:350px;
-  height:350px;
- 
+  width:400px;
+  height:400px;
+  font-family: 'Montserrat', sans-serif;
   margin: auto;
   border:solid #CC333F 10px;
   background-color:rgb(117, 204, 200);
   text-align:left;
+  padding:20px auto;
+}
+
+/*#quiz1{
+  visibility: visible;
+} */
+
+
+
+
+#number-correct{
+  font-size: 20px;
 }
 
 
-#feedback{
-  visibility: hidden;
-  width:350px;
-  height:350px;
-  margin:auto;
-  border:solid #CC333F 10px;
-  background-color:rgb(117, 204, 200);
-  text-align:center;
-}
 
 img{
   /*margin:auto;*/
   margin:20px auto;
   width:300px; 
-}
+} 
 
 /* Classes' Styles */
 
+
+
+
+.quiz-window{
+  color: black;
+  padding-left: 4-;
+  width: 400px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 20px;
+}
 
 .start-button{
   width: 90px;
@@ -107,7 +124,44 @@ img{
   margin:15px;
 }
 
-.next-button{
+/**
+    Questions Styles
+                    **/
+.question{ /*questions*/
+  width: 250px;
+  height: 60px;
+  background: #00A0B0;
+  border: solid rgb(21, 140, 151) 3px;
+  border-radius:10px;
+  margin-bottom:15px;
+  text-align:left;
+  color:black;
+  font-size: 14px;
+  font-stretch: ultra-expanded;
+  font-weight:700;
+  line-height: 1.5;
+  padding:auto ;
+  padding-left:15px;
+  padding-top: 7px;
+} /*OK*/
+
+input { /*answers*/
+  width: 250px;
+  height: 40px;
+  background:#00A0B0;
+  border: solid rgb(21, 140, 151) 3px;
+  border-radius:10px;
+  margin:2px auto;
+  text-align:left;
+  color:black;
+  font-size: 14px;
+  font-family:'Montserrat', sans-serif;
+  line-height:;
+  padding:auto;
+  padding-left: 15px;
+}
+
+/*.next-button{ ((( no longer using )))
   width: 90px;
   height: 50px;
   background: #EB6841;
@@ -121,9 +175,51 @@ img{
   font-size: 1.2em;
   font-stretch: ultra-expanded;
   line-height: 0;
+} */
+
+/**
+    Feedback Styles
+                    **/
+
+#feedback{
+  visibility:hidden;
+  width:400px;
+  height:510px;
+  margin:auto;
+  padding-top: 15px;
+  border:solid #CC333F 10px;
+  border-radius:10px;
+  background-color:rgb(117, 204, 200);
+  text-align:center;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.quiz-window{
-  color: black;
-  padding: 40px 30px 40px 30px;
+.share{
+  padding-left: 10px;
+  text-align: center;
+}
+
+.more-quizzes{
+  width:400px;
+  padding-bottom:15px;
+  margin:auto;
+  border-radius: 0 0 10px 10px;
+}
+
+.more-quizzes ul li{
+border:solid rgb(197, 87, 96) 5px;
+padding:10px;
+margin-top: 5px;
+background-color: #00A0B0;
+border-radius:5px;
+display: inline-block;
+}
+
+
+.more-quizzes a{
+  text-decoration:none;
+  color:black;
+  font-size:16px;
 }

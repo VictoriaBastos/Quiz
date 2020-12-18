@@ -6,8 +6,11 @@
     <title> Quiz HTML & CSS </title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/small.css" media="(max-width:630px)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -32,61 +35,58 @@
       <section id="questions">
         
         <form id="quiz1" class="quiz-window" name="quiz1">
-          <p>CSS stands for:</p>
-          <input type="radio" id = "multiple-choice" name="answer1" value="Cascading Style Selectors">Cascading Style Selectors<br>
-          <input type="radio" id = "multiple-choice" name="answer1" value="Cascading Structuring Sheets">Cascading Structuring Sheets<br>
-          <input type="radio" id = "multiple-choice" name="answer1" value="Common Style Sheets">Common Style Sheets<br>
-          <input type="radio" id = "multiple-choice" name="answer1" value="Cascading Style Sheets">Cascading Style Sheets<br>
-          <input type="radio" id = "multiple-choice" name="answer1" value="Style Sheets">Cascading Style Structures</p>
-
-          <input type="button" class="next-button" value="Next" onclick="next12();">
-      
+          <p class="question">CSS stands for:</p>
+          <ul>
+            <li><input type="select" class = "btn-answer" name="answer1" value="Cascading Style Selectors" onclick="next12();"></li>
+            <li><input type="select" class = "btn-answer" name="answer1" value="Cascading Structuring Sheets" onclick="next12();"></li>
+            <li><input type="select" class = "btn-answer" name="answer1" value="Common Style Sheets"onclick="next12();"></li>
+            <li><input type="select" class = "btn-answer" name="answer1" value="Cascading Style Sheets" onclick="next12();"></li>
+            <li><input type="select" class = "btn-answer" name="answer1" value="Style Sheets" onclick="next12();"></li></p>
+          </ul>
         </form>
 
         <form id="quiz2" class="quiz-window" name="quiz2">
-          <p>Which property is used to change the background color?</p>
-          <input type="radio" id = "multiple-choice" name="answer2" value="color"> color<br>
-          <input type="radio" id = "multiple-choice" name="answer2" value="background-color">background-color<br>
-          <input type="radio" id = "multiple-choice" name="answer2" value="image">image<br>
-          <input type="radio" id = "multiple-choice" name="answer2" value="background-visibility">background-visibility<br>
-          <input type="radio" id = "multiple-choice" name="answer2" value="display">display<br>
-        
-          <input type="button" class="next-button" value="Next" onclick="next23();">
-          
+          <p class="question">Which property is used to change the background color?</p>
+          <ul>
+            <li><input type="select" name="answer2" value="color" onclick="next23();"></li>
+            <li><input type="select" name="answer2" value="background-color" onclick="next23();"></li>
+            <li><input type="select" name="answer2" value="image" onclick="next23();"></li>
+            <li><input type="select" name="answer2" value="background-visibility" onclick="next23();"></li>
+            <li><input type="select" name="answer2" value="display" onclick="next23();"></li>
+          </ul>
         </form>
 
         <form id="quiz3" class="quiz-window" name="quiz3">
-          <p>What are lists used for?</p>
-          <input type="radio" name="answer3" value="Creating Links to another page">Creating Links to another page<br>
-          <input type="radio" name="answer3" value="Organizing information on a webpage">Organizing information on a webpage<br>
-          <input type="radio" name="answer3" value="Displaying text in different lines">Displaying text in different lines<br>
-          <input type="radio" name="answer3" value="Building buttons and inputs">Building buttons and inputs<br>
-          <input type="radio" name="answer3" value="Including a Style Sheet">Including a Style Sheet<br>
-
-          <input type="button" class="next-button" value="Next" onclick="next34();">
-
+          <p class="question">What are lists used for?</p>
+          <ul>
+            <li><input type="select" name="answer3" value="Creating Links to another page" onclick="next34();"></li>
+            <li><input type="select" name="answer3" value="Organizing information" onclick="next34();"></li>
+            <li><input type="select" name="answer3" value="Displaying text in different lines" onclick="next34();"></li>
+            <li><input type="select" name="answer3" value="Building selects and inputs" onclick="next34();"></li>
+            <li><input type="select" name="answer3" value="Including a Style Sheet" onclick="next34();"></li>
+          </ul>
         </form>
 
         <form id="quiz4" class="quiz-window" name="quiz4">
-          <p> To make an image a circle, we use:</p>
-          <input type="radio" name="answer4" value="border">border<br>
-          <input type="radio" name="answer4" value="border-radius">border-radius<br>
-          <input type="radio" name="answer4" value="radio">radio<br>
-          <input type="radio" name="answer4" value="circle">circle<br>
-          <input type="radio" name="answer4" value="shape">shape<br>
-
-          <input type="button" class="next-button" value="Next" onclick="next45();">
+          <p class="question"> To make an image a circle, we use:</p>
+          <ul>
+            <li><input type="select" name="answer4" value="border" onclick="next45();"></li>
+            <li><input type="select" name="answer4" value="border-radius" onclick="next45();"></li>
+            <li><input type="select" name="answer4" value="select" onclick="next45();"></li>
+            <li><input type="select" name="answer4" value="circle" onclick="next45();"></li>
+            <li><input type="select" name="answer4" value="shape" onclick="next45();"></li>
+          </ul>
         </form>
 
         <form id="quiz5" class="quiz-window" name="quiz5">
-          <p>What heading tag has the largest font size?</p>
-          <input type="radio" name="answer5" value="h1">h1<br>
-          <input type="radio" name="answer5" value="h6">h6<br>
-          <input type="radio" name="answer5" value="header">header<br>
-          <input type="radio" name="answer5" value="title">title<br>
-          <input type="radio" name="answer5" value="head">head<br>
-      
-          <input type="button" class="next-button" value="Send" onclick="check();">
+          <p class="question">What heading tag has the largest font size?</p>
+          <ul>
+            <li><input type="select" name="answer5" value="h1" onclick="check();"></li>
+            <li><input type="select" name="answer5" value="h6" onclick="check();"></li>
+            <li><input type="select" name="answer5" value="header" onclick="check();"></li>
+            <li><input type="select" name="answer5" value="title" onclick="check();"></li>
+            <li><input type="select" name="answer5" value="head" onclick="check();"></li>
+          </ul>
         </form>
       </section>
 
@@ -94,8 +94,23 @@
 
           <p id ="number-correct"> </p>
           <p id="message"></p>
-          <img id="gif">
+          <img id="gif" alt="gif">
 
+          <div class="share">  
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=large&width=109&height=28&appId" width="109" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large"> Tweet</a></iframe>
+          </div>
+
+          <div class="more-quizzes">
+            <p style="font-size:28px;"> Take more quizzes<p>
+            
+            <ul>
+              <li><a href="html/htmlquiz.html">HTML</a></li>
+              <li><a href="html/cssquiz.html">CSS</a></li>
+              <li><a href="html/jsquiz.html">JAVASCRIPT</a></li>
+            </ul>
+          </div>
       </section>
 
     </div>  

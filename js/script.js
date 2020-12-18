@@ -37,7 +37,7 @@ function check(){
     if (answer2 == "background-color"){
       correct++;
     }
-    if (answer3 == "Organizing information on a webpage"){
+    if (answer3 == "Organizing information"){
       correct++;
     }
 
@@ -51,7 +51,7 @@ function check(){
 
   var message = ["Don't give up!", "Keep studying and try again!", "Great Job!"]
   var gif = ["img/bad.gif", "img/avarage.gif","img/good.gif" ]
-      if  (correct < 1){
+      if  (correct < 2){
           range = 0;
       }
     
@@ -70,3 +70,21 @@ function check(){
   document.getElementById("message").innerHTML = message[range];
   document.getElementById("gif").src = gif[range];
 }
+
+/*twitter button*/
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));
